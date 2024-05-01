@@ -1,36 +1,8 @@
-name: UltimateShop
+name: UltimateShopEditor
 version: '${project.version}'
-main: cn.superiormc.ultimateshop.UltimateShop
+main: cn.superiormc.ultimateshopeditor.UltimateShopEditor
 api-version: 1.13
 author:
   - PQguanfang
-  - rzt1020
-libraries:
-  - cc.carm.lib:easysql-hikaricp:0.4.7
-softdepend:
-  - MMOItems
-  - MythicLib
-  - ItemsAdder
-  - Vault
-  - PlayerPoints
-  - GamePoints
-  - Oraxen
-  - EcoItems
-  - EcoArmor
-  - PlaceholderAPI
-  - UltraEconomy
-  - CoinsEngine
-  - RedisEconomy
-  - EcoBits
-  - MythicMobs
-  - PEconomy
-  - RoyaleEconomy
-  - AdvancedEnchantments
-  - NeigeItems
-  - floodgate
-commands:
-  ultimateshop:
-    aliases:
-      - "shop"
-    usage: "/ultimateshop"
-    description: "UltimateShop Main Command."
+depend:
+  - UltimateShop
