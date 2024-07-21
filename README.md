@@ -2,7 +2,7 @@
 
 Welcome to use UltimateShopEditor project, this is a addon plugin for UltimateShop.
 
-You can download it here. [Click to download]([https://www.spigotmc.org/resources/ultimateshop-menus-limits-apply-settings-10-directly-hook-and-more-1-17-1-20.110601/](https://www.spigotmc.org/resources/ultimateshopeditor-in-game-shop-editor-for-ultimateshop-plugin-w-i-p.99542)
+You can download it here. [Click to download](https://www.spigotmc.org/resources/ultimateshopeditor-in-game-shop-editor-for-ultimateshop-plugin-w-i-p.99542)
 
 I am the copyright owner of this project, and the prerequisite for granting you a GPL v3 free license is that you have followed the following actions:
 - Anyone is free to share a complete copy of this plugin, provided that you do not share it in any inappropriate places, such as pirated websites, leaked websites, etc. and/or their contact group, like Discord, QQ, Telegram, unless such websites are not profitable. As long as the website has advertising, paid membership, and other content, I consider it profitable.
