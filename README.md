@@ -1,10 +1,8 @@
-# UltimateShop
+# UltimateShopEditor
 
-Welcome to use UltimateShop project, this is a shop plugin for Spigot.
+Welcome to use UltimateShopEditor project, this is a addon plugin for UltimateShop.
 
-Consider respect my work and buy the plugin here, you can get free support, subbmit suggestion service. [Click to buy](https://www.spigotmc.org/resources/ultimateshop-premium-menu-dynamic-price-limits-apply-settings-sell-all-and-more-1-17-1-20.113069/)
-
-You can also get free version here. [Click to download](https://www.spigotmc.org/resources/ultimateshop-menus-limits-apply-settings-10-directly-hook-and-more-1-17-1-20.110601/)
+You can download it here. [Click to download]([https://www.spigotmc.org/resources/ultimateshop-menus-limits-apply-settings-10-directly-hook-and-more-1-17-1-20.110601/](https://www.spigotmc.org/resources/ultimateshopeditor-in-game-shop-editor-for-ultimateshop-plugin-w-i-p.99542/))
 
 I am the copyright owner of this project, and the prerequisite for granting you a GPL v3 free license is that you have followed the following actions:
 - Anyone is free to share a complete copy of this plugin, provided that you do not share it in any inappropriate places, such as pirated websites, leaked websites, etc. and/or their contact group, like Discord, QQ, Telegram, unless such websites are not profitable. As long as the website has advertising, paid membership, and other content, I consider it profitable.
@@ -25,34 +23,3 @@ I am the copyright owner of this project, and the prerequisite for granting you 
 - Rotate Shop (DONE)
 - BungeeCord Sync (DONE)
 - 2.0.0 RELEASE: After finish GUI Editor, we will publish v2 version, this version won't have any big change, we just make everyone know UltimateShop has finished all planned work and now should be stable to use.
-## Develop
-### Get shop object
-```java
-ConfigManager.configmanager.shopConfigs.get(shopID);
-```
-### Get product object
-```java
-ObjectShop shop = ConfigManager.configmanager.shopConfigs.get(shopID);
-if (shop == null) {
-  return;
-}
-ObjectItem item = shop.getProduct("TEST");
-List<ObjectItem> items = shop.getProductList();
-```
-
-### Stat buy a product
-```java
-BuyProductMethod.startBuy(Inventory inventory, String shop, String product, Player player, boolean quick, boolean test, int multi);
-```
-- inventory is Bukkit inventory object, for player's inventory, use player.getInventory() method.
-- shop is shop ID.
-- product is product ID.
-- quick is whether send message after buy (will still send if you enable send-message-after-buy option in config.yml)
-- test is whether take money or items from player, set it to true if you just want to know whether player has enough money or items.
-- multi is buy amount in one time, default set to 1.
-
-### Start sell a product
-```java
-SellProductMethod.startSell(Inventory inventory, String shop, String product, Player player, boolean quick, boolean test, boolean ableMaxSell, int multi);
-```
-- ableMaxSell is whether if player don't have enough money or items for now multi(amount) value, we will try to get max amount that player able to sell. Use for sell all command.
